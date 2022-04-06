@@ -18,6 +18,9 @@ const Trials = () => {
     const handleClickFive = () => {
         window.open('https://connect.trialscope.com/studies/9482d640-d324-4510-b378-177cacbb6e41?pv=1&utm_locale=en');
     }
+    const handleClickSix = () => {
+        window.open('https://connect.trialscope.com/studies/8d6e579f-6db4-4da5-b988-1edcf47b86e6?pv=1&utm_locale=en');
+    }
     return (
         <div style={{marginTop: '3vw', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
             <div style={{width: '100vw', marginBottom: '2vw'}}>
@@ -54,6 +57,12 @@ const Trials = () => {
                 <CardContent>
                     <Typography sx={{fontWeight: 600}}>Ages 6-10</Typography>
                     <Typography sx={{fontWeight: 600}}>COVID-19</Typography>
+                </CardContent>
+            </Card>
+            <Card onClick={handleClickSix} sx={{minWidth: '150px', minHeight: '150px', marginBottom: '10px', backgroundColor: 'white', marginRight: '2vw', marginLeft: '2vw', width: '20vw', cursor: 'pointer'}}>
+                <CardContent>
+                    <Typography sx={{fontWeight: 600}}>Ages 18+</Typography>
+                    <Typography sx={{fontWeight: 600}}>Flu</Typography>
                 </CardContent>
             </Card>
         </div>
